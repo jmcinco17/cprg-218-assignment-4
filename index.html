@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke Of The Day</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <h1>Single Part Joke</h1>
-    <h2>Joke Of The Day</h2>
-    <button onclick="fetchjoke()">Programming</button>
-    <p id="programming"></p>
-    <button onclick="fetchjoke()">Misc</button>
-    <p id="misc"></p>
+<body onload="fetchjoke('Any')">
+    <h1 id="title">Joke Of The Day</h1>
+    <p id="joke"></p>
+    <h2>Generate a New Random Joke By Category</h2>
+    <button onclick="fetchjoke('Programming')">Programming</button>
+    <button onclick="fetchjoke('Miscellaneous')">Misc</button>
+    <button onclick="fetchjoke('Pun')">Pun</button>
+    <button onclick="fetchjoke('Spooky')">Spooky</button>
+    <button onclick="fetchjoke('Christmas')">Christmas</button>
 
 
     <script src="joke.js"></script>
